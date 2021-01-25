@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=5.0, maximum-scale=5.0, minimum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nivel de Satisfação</title>
+    <link rel="stylesheet" href="./assets/css/bulma.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="nav-item is-brand" href="./index.html">
+                    <img src="./imagens/valloureclogo.png">
+                </a>
+                <a class="nav-item is-tab is-active" href="./index.html">
+                    <img src="./imagens/home.png">
+                    <span>Home</span>
+                </a>
+            </div>
+            <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+
+
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div>
+        <img class="tapa_place" src="./imagens/Sem título.png">
+        <input id="getTag" type="text" maxlength="10" onfocus="this.value=''">
+        <p id="last-user" style="text-align: center; ">Olá, aproxime sua tag para começar.</p>
+    </div>
+    <main class="container ">
+        <div class="columns ">
+            <div class="column is-3 card ">
+
+                <div class="card-content ">
+                    <p class="subtitle ">
+                        <input type="image" src="./imagens/veryBad.png " id="veryBad" class="satis ">
+                        <ul id="veryBad_LastTag" style="text-align: center "></ul>
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3 card ">
+                <div class="card-content ">
+                    <p class="subtitle ">
+                        <input type="image" src="./imagens/bad.png" id="bad" class="satis">
+                        <ul id="bad_LastTag" style="text-align: center "></ul>
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3 card ">
+                <div class="card-content ">
+                    <p class="subtitle ">
+                        <input type="image" src="./imagens/medium.png" id="medium" class="satis">
+                        <ul id="medium_LastTag" style="text-align: center "></ul>
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3 card ">
+                <div class="card-content ">
+                    <p class="subtitle ">
+                        <input type="image" src="./imagens/good.png" id="good" class="satis">
+                        <ul id="good_LastTag" style="text-align: center "></ul>
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3 card ">
+                <div class="card-content ">
+                    <p class="subtitle ">
+                        <input type="image" src="./imagens/veryGood.png" id="veryGood" class="satis">
+                        <ul id="veryGood_LastTag" style="text-align: center "></ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style>
+
+            <button id="sent-doc" class="sent-btn">ENVIAR RELATÓRIO</button>
+        </div>
+    </footer>
+    <script src="./assets/js/axios.min.js "></script>
+    <script src="./assets/js/jquery-2.2.0.min.js "></script>
+    <script src="./assets/js/googleApi.js "></script>
+    <script src="./assets/js/init-bulma.js "></script>
+    <script src="./assets/js/varDeclaration.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
